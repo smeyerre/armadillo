@@ -49,10 +49,5 @@ armadillo -r all
 ```
 
 
-
-
-
 # TODO
  - document additional scraper functions
- - automate running
- - finish readme with usage instructions
