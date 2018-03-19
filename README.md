@@ -41,5 +41,6 @@ You can now set up your `credentials.yml` file as instructed in the file itself.
 
 
 # TODO
+ - document additional scraper functions
  - automate running
  - finish readme with usage instructions
