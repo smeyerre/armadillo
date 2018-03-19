@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
-from lxml import html
-from email.mime.text import MIMEText
-from twilio.rest import Client
-import os
-import requests
 import sys
-import smtplib
+import os
 import json
 import yaml
+import requests
+from lxml import html
+from twilio.rest import Client
 
 
 PAGE_URL = 'http://www.adm.uwaterloo.ca/cgi-bin/cgiwrap/infocour/salook.pl'
