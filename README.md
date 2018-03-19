@@ -13,7 +13,7 @@ Be notified by text message the instant a University of Waterloo course you're i
 You can install these from their source pages.
 You can also use [pip](https://github.com/pypa/pip) with or without [virtualenv](https://virtualenv.pypa.io/en/latest/):
 ```
-sudo pip install lxml requests twilio
+sudo pip3 install lxml requests twilio
 ```
 
 #### Install Armadillo
@@ -35,6 +35,18 @@ You can now set up your `credentials.yml` file as instructed in the file itself.
 
 
 ## Usage
+#### To watch a course for openings
+```
+armadillo <term> <subject> <course_number>
+```
+#### To stop watching a course
+```
+armadillo -r <term> <subject> <course_number>
+```
+#### To stop watching all courses
+```
+armadillo -r all
+```
 
 
 

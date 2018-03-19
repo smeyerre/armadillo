@@ -1,3 +1,11 @@
 #!/bin/bash
 
-(crontab -l 2>/dev/null; echo "0,30 8-20 * * * /usr/local/lib/python3.5/dist-packages/armadillo/checkCourse.py $1 $2 $3") | crontab -
+if [ $1 = "-r" ]; then
+    if [ $2 = "all" ]; then
+        crontab -u $USER -r
+    else
+        (crontab -l | grep -v "/usr/local/lib/python3.5/dist-packages/armadillo/checkCourse.py $2 $3 $4") | crontab -
+    fi
+else
+    (crontab -l 2>/dev/null; echo "0,30 8-20 * * * /usr/local/lib/python3.5/dist-packages/armadillo/checkCourse.py $1 $2 $3") | crontab -
+fi
