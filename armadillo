@@ -106,7 +106,7 @@ if __name__ == '__main__':
 
     API_KEY = creds['api_key']
 
-    sess = '' + input("Enter term number: ")
-    subject = '' + input("Enter subject code: ")
-    cournum = '' + input("Enter course number: ")
-    print(check_api_courses(sess, subject, cournum))
+    sess = sys.argv[1]
+    subject = sys.argv[2]
+    cournum = sys.argv[3]
+    check_api_courses(sess, subject, cournum)
