@@ -34,6 +34,8 @@ Now you'll need to [sign up for a free Twilio trial](https://www.twilio.com/try-
 You can now set up your `credentials.yml` file as instructed in the file itself. Once you have filled in each field, run `sudo make` and you're done!
 
 
+## Usage
+
 
 
 
